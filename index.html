@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bright Harvest Food Limited — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="snoo2.jpeg" alt="Bright Harvest Logo" class="logo"></a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Bright Harvest Food Limited</h1>
+        <p>Delivering fresh, safe and responsibly sourced food products from our farms to your table.</p>
+        <div class="hero-cta">
+          <a class="btn" href="about.html">Learn more</a>
+          <a class="btn outline" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>What we do</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Farm-to-shelf supply</h3>
+          <p>We manage the sourcing, processing and distribution to ensure quality and traceability.</p>
+        </article>
+        <article class="card">
+          <h3>Sustainable practices</h3>
+          <p>Our methods prioritise soil health, water conservation and fair treatment of workers.</p>
+        </article>
+        <article class="card">
+          <h3>Food safety & quality</h3>
+          <p>Strict checks and modern facilities guarantee safe products for consumers and businesses.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="container">
+        <h2>Why choose Bright Harvest?</h2>
+        <p>We combine local knowledge with modern food processing and logistics to bring reliable products to retailers, restaurants and households.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Bright Harvest Food Limited</strong>
+        <p>Farming • Processing • Distribution</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="container copyright">© <span id="year"></span> Bright Harvest Food Limited — All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (toggle && nav) toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

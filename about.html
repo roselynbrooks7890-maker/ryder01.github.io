@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Bright Harvest Food Limited</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="snoo2.jpeg" alt="Bright Harvest Logo" class="logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container about-intro">
+      <h1>About Us</h1>
+      <p>Bright Harvest Food Limited was founded to bridge the gap between smallholder farms and reliable markets. We specialise in delivering quality food products — from fresh produce through to processed staples — with a focus on sustainability, traceability and community development.</p>
+    </section>
+
+    <section class="container team">
+      <h2>Our approach</h2>
+      <ul class="bullets">
+        <li>Partner with local farmers and cooperatives</li>
+        <li>Invest in post-harvest handling and processing</li>
+        <li>Maintain strict food safety standards</li>
+        <li>Support local communities with fair pricing and training</li>
+      </ul>
+    </section>
+
+    <section class="container mission">
+      <h2>Mission & Vision</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Mission</h3>
+          <p>To provide safe, nutritious and affordable food while improving livelihoods along the value chain.</p>
+        </div>
+        <div>
+          <h3>Vision</h3>
+          <p>To be a leading, trusted food supplier recognised for sustainability and quality across the region.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Bright Harvest Food Limited</strong>
+        <p>Farming • Processing • Distribution</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="container copyright">© <span id="year-about"></span> Bright Harvest Food Limited — All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year-about').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (toggle && nav) toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
